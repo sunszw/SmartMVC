@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+	<!--配置控制器相关的信息-->
+	<bean class="com.study.controller.HelloController"></bean>
+	
+	
+</beans>
+

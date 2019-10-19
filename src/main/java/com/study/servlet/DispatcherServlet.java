@@ -32,7 +32,7 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         SAXReader saxReader = new SAXReader();
-        String fileName=getInitParameter("configLocation");
+        String fileName = getInitParameter("configLocation");
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
         try {
             Document document = saxReader.read(inputStream);
@@ -74,7 +74,27 @@ public class DispatcherServlet extends HttpServlet {
         Method method = handler.getMethod();
         Object rv = null;
         try {
-            rv = method.invoke(object);
+            //判断方法是否带有参数,(暂时只支持request和response参数)
+            //getParameterTypes()类型为Class[],比如int.class,String.class,HttpServletRequest.class...
+            Class[] types = method.getParameterTypes();
+            if (types.length == 0) {
+                //如果不带参数
+                rv = method.invoke(object);
+            } else {
+                //如果带参数，依据参数类型进行相应的赋值
+                Object[] params = new Object[types.length];
+                for (int i = 0; i < types.length; i++) {
+                    if (types[i] == HttpServletRequest.class) {
+                        params[i] = req;
+                    }
+                    if (types[i] == HttpServletResponse.class) {
+                        params[i] = resp;
+                    }
+                }
+                method.invoke(object,params);
+            }
+
+
             String viewName = rv.toString();
             //处理重定向
             if (viewName.startsWith("redirect:")) {

@@ -9,9 +9,7 @@
     <list default="true" id="48c8380b-c213-4f15-8f0d-de80f3491b32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/servlet/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/servlet/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SmartMVC/WEB-INF/classes/com/study/servlet/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SmartMVC/WEB-INF/classes/com/study/servlet/DispatcherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SmartMVC/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SmartMVC/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/study/servlet/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/study/servlet/DispatcherServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571380586393</updated>
       <workItem from="1571380589542" duration="11202000" />
-      <workItem from="1571446293838" duration="18339000" />
+      <workItem from="1571446293838" duration="19397000" />
     </task>
     <task id="LOCAL-00001" summary="简单mvc框架">
       <created>1571473746097</created>
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571473746097</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="简单mvc框架">
+      <created>1571474439270</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571474439270</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,13 +386,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="183" y="0" key="SettingsEditor/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571461382342" />
-    <state x="275" y="88" key="Vcs.Push.Dialog.v2" timestamp="1571473790904">
+    <state x="275" y="88" key="Vcs.Push.Dialog.v2" timestamp="1571474441403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="88" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571473790904" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1571458375876">
+    <state x="275" y="88" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571474441403" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1571475025322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571458375876" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571475025322" />
   </component>
 </project>

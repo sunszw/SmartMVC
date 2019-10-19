@@ -1,6 +1,5 @@
 package com.study.servlet;
 
-import com.study.annotation.RequestMapping;
 import com.study.mapping.Handler;
 import com.study.mapping.HandlerMapping;
 import org.dom4j.Document;
@@ -33,7 +32,8 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         SAXReader saxReader = new SAXReader();
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("smartmvc.xml");
+        String fileName=getInitParameter("configLocation");
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
         try {
             Document document = saxReader.read(inputStream);
             Element root = document.getRootElement();

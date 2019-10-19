@@ -11,6 +11,10 @@
   <servlet>
     <servlet-name>DispatcherServlet</servlet-name>
     <servlet-class>com.study.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>configLocation</param-name>
+      <param-value>smartmvc.xml</param-value>
+    </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>

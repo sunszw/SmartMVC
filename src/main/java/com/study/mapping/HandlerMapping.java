@@ -20,23 +20,36 @@ public class HandlerMapping {
             Class cls = bean.getClass();
             Method[] methods = cls.getDeclaredMethods();
             RequestMapping classMapping = (RequestMapping) cls.getAnnotation(RequestMapping.class);
-            String classPath = null;
+            String classPath = "";
             if (classMapping != null) {
+                //获得类上的注解
                 classPath = classMapping.value();
             }
-
 
             //遍历控制器中的方法
             for (Method method : methods) {
                 //获得注解
                 RequestMapping requestMapping = method.getAnnotation(RequestMapping.class);
-                //获得请求路径
+                //获得方法上的注解
                 String methodPath = requestMapping.value();
-                String path = null;
+                //获得完整请求路径
+                String path = "";
                 if (classMapping == null) {
-                    path = "/" + methodPath;
+                    if (methodPath.contains("/")) {
+                        path = methodPath;
+                    } else {
+                        path = "/" + methodPath;
+                    }
                 } else {
-                    path = "/" + classPath + "/" + methodPath;
+                    if (classPath.contains("/") && methodPath.contains("/")) {
+                        path = classPath + methodPath;
+                    } else if (classPath.contains("/") && !methodPath.contains("/")) {
+                        path = classPath + "/" + methodPath;
+                    } else if (!classPath.contains("/") && methodPath.contains("/")) {
+                        path = "/" + classPath + methodPath;
+                    } else {
+                        path = "/" + classPath + "/" + methodPath;
+                    }
                 }
                 Handler handler = new Handler(bean, method);
                 //将请求路径保存到maps中

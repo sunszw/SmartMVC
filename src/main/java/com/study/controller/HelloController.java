@@ -13,10 +13,10 @@ public class HelloController {
 
     @RequestMapping("demo01.do")
     public String demo01(){
-        return "redirect:mvc/demo02.do";
+        return "redirect:demo02.do";
     }
 
-    @RequestMapping("demo02.do")
+    @RequestMapping("/demo02.do")
     public String demo02(){
         return "demo02";
     }

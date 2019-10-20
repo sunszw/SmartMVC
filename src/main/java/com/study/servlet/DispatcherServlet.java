@@ -1,5 +1,6 @@
 package com.study.servlet;
 
+import com.study.annotation.RequestMapping;
 import com.study.mapping.Handler;
 import com.study.mapping.HandlerMapping;
 import org.dom4j.Document;
@@ -63,6 +64,8 @@ public class DispatcherServlet extends HttpServlet {
         //截取请求资源路径
         String contextPath = req.getContextPath();
         String path = uri.substring(contextPath.length());
+        System.out.println("contextPath:" + contextPath);
+        System.out.println("提交的path:" + path);
         //调用HandlerMapping对象的方法，获得对应的Handler对象
         Handler handler = handlerMapping.getHandler(path);
         if (handler == null) {
@@ -91,14 +94,23 @@ public class DispatcherServlet extends HttpServlet {
                         params[i] = resp;
                     }
                 }
-                method.invoke(object,params);
+                method.invoke(object, params);
             }
 
 
             String viewName = rv.toString();
             //处理重定向
             if (viewName.startsWith("redirect:")) {
-                String redirectPath = contextPath + "/" + viewName.substring("redirect:".length());
+                RequestMapping classMapping = object.getClass().getAnnotation(RequestMapping.class);
+                String classPath = "";
+                String redirectPath = "";
+                if (classMapping != null && !classPath.contains("/")) {
+                    classPath = classMapping.value();
+                    redirectPath = contextPath + "/" + classPath + "/" + viewName.substring("redirect:".length());
+                } else {
+                    redirectPath = contextPath + classPath + "/" + viewName.substring("redirect:".length());
+
+                }
                 resp.sendRedirect(redirectPath);
                 return;
             }

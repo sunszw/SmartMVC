@@ -33,7 +33,7 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         try {
-             SAXReader saxReader = new SAXReader();
+            SAXReader saxReader = new SAXReader();
             String fileName = getInitParameter("configLocation");
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
             Document document = saxReader.read(inputStream);

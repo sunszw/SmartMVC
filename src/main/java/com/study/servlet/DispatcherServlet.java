@@ -32,10 +32,10 @@ public class DispatcherServlet extends HttpServlet {
      */
     @Override
     public void init() throws ServletException {
-        SAXReader saxReader = new SAXReader();
-        String fileName = getInitParameter("configLocation");
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
         try {
+             SAXReader saxReader = new SAXReader();
+            String fileName = getInitParameter("configLocation");
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
             Document document = saxReader.read(inputStream);
             Element root = document.getRootElement();
             List<Element> elements = root.elements();

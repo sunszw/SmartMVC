@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c8380b-c213-4f15-8f0d-de80f3491b32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/mapping/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/mapping/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/mapping/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/mapping/HandlerMapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/servlet/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/servlet/DispatcherServlet.java" afterDir="false" />
     </list>
@@ -16,6 +17,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +55,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1SMjvB4kzeKRHSOeUYO9xcnWctB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -62,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../status" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,18 +93,6 @@
       <recent name="C:\Users\uid\IdeaProjects\SmartMVC\src\main\resources" />
       <recent name="C:\Users\uid\IdeaProjects\SmartMVC\src\main\java\com\study\util" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.24">
     <configuration name="DBUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -249,6 +244,8 @@
       <workItem from="1571380589542" duration="11202000" />
       <workItem from="1571446293838" duration="19426000" />
       <workItem from="1571536954605" duration="7724000" />
+      <workItem from="1572006681155" duration="174000" />
+      <workItem from="1572256187298" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="简单mvc框架">
       <created>1571473746097</created>
@@ -299,6 +296,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571463334665" />
+    <state x="1070" y="577" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1572006687640">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1070" y="577" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1572006687640" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1571459995053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

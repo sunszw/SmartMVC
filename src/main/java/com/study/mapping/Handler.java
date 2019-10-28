@@ -6,23 +6,23 @@ import java.lang.reflect.Method;
  * 将控制器实例和方法封装到Handler对象里面
  */
 public class Handler {
-    private Object object;
+    private Object bean;
     private Method method;
 
     public Handler() {
     }
 
-    public Handler(Object object, Method method) {
-        this.object = object;
+    public Handler(Object bean, Method method) {
+        this.bean = bean;
         this.method = method;
     }
 
-    public Object getObject() {
-        return object;
+    public Object getBean() {
+        return bean;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public void setBean(Object bean) {
+        this.bean = bean;
     }
 
     public Method getMethod() {

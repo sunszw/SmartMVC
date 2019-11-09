@@ -53,6 +53,7 @@ public class HandlerMapping {
                         path = "/" + classPath + "/" + methodPath;
                     }
                 }
+                //将路径和对应的handler对象封装到maps中
                 Handler handler = new Handler(bean, method);
                 maps.put(path, handler);
             }
